@@ -21,8 +21,8 @@ function stripArticle(name) {
 const sortedBands = bands.sort((a, b) => {
   return stripArticle(a).localeCompare(stripArticle(b));
 });
+const ul = document.getElementById('bands');
 
-const ul = document.getElementById('band');
 sortedBands.forEach(band => {
   const li = document.createElement('li');
   li.textContent = band;
